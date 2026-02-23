@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Correa - Performance Wear</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+header {
+    padding: 30px;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.products {
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.color-box {
+    height: 200px;
+    background: #000;
+}
+
+.gray { background: #777; }
+.white { background: #ddd; }
+.green { background: #2f4f2f; }
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+CORREA
+</header>
+
+<section class="hero">
+<h1>DISCIPLINA. INTENSIDAD. IDENTIDAD.</h1>
+<p>Performance wear diseñada para entrenar sin límites.</p>
+<a href="https://instagram.com/correa.urb" class="button">VER INSTAGRAM</a>
+</section>
+
+<section class="products">
+
+<div class="product">
+<div class="color-box"></div>
+<h3>Sweat Guard - Negro</h3>
+</div>
+
+<div class="product">
+<div class="color-box gray"></div>
+<h3>Sweat Guard - Gris</h3>
+</div>
+
+<div class="product">
+<div class="color-box white"></div>
+<h3>Sweat Guard - Blanco</h3>
+</div>
+
+<div class="product">
+<div class="color-box green"></div>
+<h3>Sweat Guard - Verde</h3>
+</div>
+
+</section>
+
+<footer>
+Hecho para los que entrenan en serio.<br>
+© 2026 CORREA
+</footer>
+
+</body>
+</html>
