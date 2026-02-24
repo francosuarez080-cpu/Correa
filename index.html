@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Correa - Disciplina. Intensidad. Identidad.</title>
+<title>Correa - Performance Wear</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -13,84 +14,130 @@ body {
     color: #000;
 }
 
-section {
-    padding: 100px 20px;
+header {
+    padding: 30px;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 3px;
     text-align: center;
 }
 
 .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 120px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
 }
 
-h1 {
-    font-size: 60px;
+.hero h1 {
+    font-size: 50px;
     font-weight: 900;
-    letter-spacing: 5px;
+    margin-bottom: 10px;
 }
 
-.subtitle {
+.hero p {
+    margin-top: 10px;
     font-size: 18px;
-    margin-top: 20px;
 }
 
-button {
+.button {
+    display: inline-block;
     margin-top: 30px;
     padding: 15px 40px;
-    border: none;
-    background-color: #000;
-    color: #fff;
+    background: black;
+    color: white;
+    text-decoration: none;
     font-weight: 700;
-    cursor: pointer;
-    transition: 0.3s;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #333;
+.products {
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
 }
 
-.product h2 {
-    font-size: 36px;
-    font-weight: 700;
+.product {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.manifesto {
-    font-size: 40px;
-    font-weight: 900;
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
 }
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.color-box {
+    height: 200px;
+    border-radius: 5px;
+}
+
+.black { background: #000; }
+.gray { background: #777; }
+.white { background: #ddd; }
+.green { background: #2f4f2f; }
 
 footer {
-    padding: 40px;
+    text-align: center;
+    padding: 60px 20px;
     font-size: 14px;
+    background-color: #f5f5f5;
 }
+
 </style>
 </head>
 
 <body>
 
+<header>
+CORREA
+</header>
+
 <section class="hero">
-    <h1>CORREA</h1>
-    <div class="subtitle">DISCIPLINA. INTENSIDAD. IDENTIDAD.</div>
-    <button onclick="window.location.href='https://instagram.com/TUUSUARIO'">SHOP NOW</button>
+<h1>DISCIPLINA. INTENSIDAD. IDENTIDAD.</h1>
+<p>Performance wear diseñada para entrenar sin límites.</p>
+<a href="https://instagram.com/CORREA.URB" class="button">VER INSTAGRAM</a>
 </section>
 
-<section class="product">
-    <h2>Correa Sweat Guard</h2>
-    <p>Diseñado para entrenar fuerte. Hecho para absorber cada gota.</p>
-    <p>✔ Ajuste firme<br>✔ Absorción real<br>✔ Multideporte</p>
-    <button onclick="window.location.href='https://instagram.com/TUUSUARIO'">VER EN INSTAGRAM</button>
-</section>
+<section class="products">
 
-<section class="manifesto">
-    NOT FOR EVERYONE.<br>
-    SOLO PARA LOS QUE ENTRENAN EN SERIO.
+<div class="product">
+<div class="color-box black"></div>
+<h3>Sweat Guard - Negro</h3>
+<a href="https://instagram.com/CORREA.URB" class="button">VER EN INSTAGRAM</a>
+</div>
+
+<div class="product">
+<div class="color-box gray"></div>
+<h3>Sweat Guard - Gris</h3>
+<a href="https://instagram.com/CORREA.URB" class="button">VER EN INSTAGRAM</a>
+</div>
+
+<div class="product">
+<div class="color-box white"></div>
+<h3>Sweat Guard - Blanco</h3>
+<a href="https://instagram.com/CORREA.URB" class="button">VER EN INSTAGRAM</a>
+</div>
+
+<div class="product">
+<div class="color-box green"></div>
+<h3>Sweat Guard - Verde</h3>
+<a href="https://instagram.com/CORREA.URB" class="button">VER EN INSTAGRAM</a>
+</div>
+
 </section>
 
 <footer>
-    Hecho en Argentina.<br>
-    © 2026 CORREA
+Hecho para los que entrenan en serio.<br>
+© 2026 CORREA
 </footer>
 
 </body>
